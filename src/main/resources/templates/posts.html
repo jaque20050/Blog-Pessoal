@@ -5,7 +5,7 @@
 	<title>MyCodeBlog</title>
 	<!--Import Google Icon Font-->
 	<!---link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <!-- Bootstrap CSS -->
+    <!-Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!--<link rel="stylesheet" href="style/styleCss.css"/>-->
@@ -38,7 +38,7 @@
 								th:text="${post.titulo}"></span></h4>
 					</a>
 					<p class="card-text"><span th:utext="${#strings.abbreviate(post.texto,400)} "></span></p>
-					<!--<a th:href="${(#mvc.url('BC#getPostDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a>-->
+					<a th:href="${(#mvc.url('CC#getPostDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a>
 				</div>
 			</div>
 		</div>
